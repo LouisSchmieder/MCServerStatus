@@ -17,3 +17,6 @@ git clone https://github.com/LouisSchmieder/MCServerStatus && cd MCServerStatus
 #Run the executable
 v run .
 ```
+
+# Example
+<img src="https://imgur.com/QQqfZGD.png">

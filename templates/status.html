@@ -5,7 +5,10 @@
     @if server_status.version.protocol == 0
         <h2 align="center" style="color: red">Can not reach the server</h2>
     @else
-        <img id="favicon" src="@server_status.favicon">
+        <div class="favicon_server">
+            <img id="favicon" src="@server_status.favicon">
+            <span>Status for server: @host:@port</span>
+        </div>
 
         <h2>Version: @server_status.version.name (Protocol: @server_status.version.protocol)</h2>
         <!---h2>Motd: @server_status.description.text</h2-->
