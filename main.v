@@ -85,7 +85,6 @@ fn get_server_status(host string, port i16) Status {
 	}
 	data := p.data as packet.PacketInStatusResponse
 	json_data := data.json_response
-
 	// Ping
 	now := i64(time.now().unix)
 	packet.write_packet(sock, packet.Packet{
