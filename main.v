@@ -40,6 +40,10 @@ pub fn (mut app App) request_status() vweb.Result {
 	return app.vweb.redirect('/status/$ip')
 }
 
+pub fn (mut app App) empty_status() vweb.Result {
+	return app.vweb.redirect('/')
+}
+
 ['/status/:ip']
 pub fn (mut app App) status(ip string) vweb.Result {
 	arr := ip.split(':')
