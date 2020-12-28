@@ -40,6 +40,7 @@ pub fn (mut app App) request_status() vweb.Result {
 	return app.vweb.redirect('/status/$ip')
 }
 
+['/status']
 pub fn (mut app App) empty_status() vweb.Result {
 	return app.vweb.redirect('/')
 }
