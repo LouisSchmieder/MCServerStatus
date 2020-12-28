@@ -6,8 +6,8 @@ A service to check the server status from minecraft servers
 - [x] Version
 - [x] Player info
 - [x] Player heads
-- [] Motd
-- [] Better design
+- [ ] Motd
+- [ ] Better design
 
 # Usage:
 ```bash
