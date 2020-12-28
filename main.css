@@ -1,0 +1,93 @@
+* {
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Oxygen,Fira Sans,Droid Sans,Helvetica Neue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #1c9ebe;
+    transition: 500ms;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search > form {
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+}
+
+.search > form > input[type="text"] {
+    width: 300px;
+    border: 1px solid gray;
+    border-right: 0;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search > form > input[type="submit"] {
+    border: 1px solid gray;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+    height: 40px;
+    background: rgba(80, 223, 122, 0.78);
+}
+
+.search > form > input[type="submit"]:hover {
+    background: rgba(134, 184, 19, 0.719);
+    color: black;
+    transition: 500ms;
+}
+
+.canv {
+    min-height: calc(100vh - 200px);
+    width: 80%;
+    margin-left: 10%;
+}
+
+#favicon {
+    height: 150px;
+}
+
+img {
+    height: 50px;
+    width: auto;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+}
+
+.players > div {
+    display: flex;
+    align-items: center;
+}
+
+.players > div > b {
+    margin-left: 5px;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}

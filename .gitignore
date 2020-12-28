@@ -1,0 +1,8 @@
+# Binaries for programs and plugins
+main
+Minecraft server status
+*.exe
+*.exe~
+*.so
+*.dylib
+*.dll

@@ -1,0 +1,29 @@
+@header
+
+<div class="canv">
+
+    @if server_status.version.protocol == 0
+        <h2 align="center" style="color: red">Can not reach the server</h2>
+    @else
+        <img id="favicon" src="@server_status.favicon">
+
+        <h2>Version: @server_status.version.name (Protocol: @server_status.version.protocol)</h2>
+        <h2>Motd: @server_status.description.text</h2>
+        <h3>Players: @server_status.players.online / @server_status.players.max</h3>
+        <h4>Online Players</h4>
+        .players {
+            @for user in server_status.players.sample
+
+                <div>
+                    <img src="https://crafatar.com/avatars/@user.id">
+                    <b>@user.name</b>
+                </div>
+
+
+            @end
+        }
+    @end
+</div>
+
+
+@footer
